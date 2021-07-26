@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">ShoesApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="choose_category">Choose Category</string>
+    <string name="mens">MENS</string>
+    <string name="women">WOMENS</string>
+    <string name="kids">KIDS</string>
+    <string name="cart">Cart</string>
+    <string name="add_to_cart">Add To Cart</string>
+
+    <!--    Mens Shoes-->
+    <string name="mens_shoes1">Nike Air Jordan 1</string>
+    <string name="mens_shoes2">Nike Feather Lite</string>
+    <string name="mens_shoes3">Nike Jog Free</string>
+    <string name="mens_shoes4">Nike Air Jordan Blue</string>
+    <string name="mens_shoes5">RedTape Black Beauty</string>
+
+    <string name="mens_shoes_price1">Rs 8999</string>
+    <string name="mens_shoes_price2">Rs 4499</string>
+    <string name="mens_shoes_price3">Rs 4999</string>
+    <string name="mens_shoes_price4">Rs 13999</string>
+    <string name="mens_shoes_price5">Rs 1499</string>
+
+    <!--    Womens Shoes-->
+    <string name="women_shoes1">Roadster Flex</string>
+    <string name="women_shoes2">Nike Air</string>
+    <string name="women_shoes3">Skechers GoWalk</string>
+    <string name="women_shoes4">Beluga Heel</string>
+    <string name="women_shoes5">Catwalk Heel</string>
+
+    <string name="women_shoes_price1">Rs 1999</string>
+    <string name="women_shoes_price2">Rs 3499</string>
+    <string name="women_shoes_price3">Rs 3999</string>
+    <string name="women_shoes_price4">Rs 1499</string>
+    <string name="women_shoes_price5">Rs 2499</string>
+
+    <!--    Kids Shoes-->
+    <string name="kids_shoes1">Blue Crocs</string>
+    <string name="kids_shoes2">Redtape Jello</string>
+    <string name="kids_shoes3">Vans Sketchs</string>
+    <string name="kids_shoes4">Asix RunFree</string>
+    <string name="kids_shoes5">Ogre Crocs</string>
+
+    <string name="kids_shoes_price1">Rs 1999</string>
+    <string name="kids_shoes_price2">Rs 2499</string>
+    <string name="kids_shoes_price3">Rs 1499</string>
+    <string name="kids_shoes_price4">Rs 3999</string>
+    <string name="kids_shoes_price5">Rs 2299</string>
+</resources>

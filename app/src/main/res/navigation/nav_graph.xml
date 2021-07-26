@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/startFragment">
+
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.example.shoesapp.StartFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_start" >
+        <action
+            android:id="@+id/action_startFragment_to_menFragment"
+            app:destination="@id/menFragment" />
+        <action
+            android:id="@+id/action_startFragment_to_womenFragment"
+            app:destination="@id/womenFragment" />
+        <action
+            android:id="@+id/action_startFragment_to_kidsFragment"
+            app:destination="@id/kidsFragment" />
+        <action
+            android:id="@+id/action_startFragment_to_cartFragment"
+            app:destination="@id/cartFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/menFragment"
+        android:name="com.example.shoesapp.MenFragment"
+        android:label="@string/mens"
+        tools:layout="@layout/fragment_men" >
+        <action
+            android:id="@+id/action_menFragment_to_cartFragment"
+            app:destination="@id/cartFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/kidsFragment"
+        android:name="com.example.shoesapp.KidsFragment"
+        android:label="@string/kids"
+        tools:layout="@layout/fragment_kids" >
+        <action
+            android:id="@+id/action_kidsFragment_to_cartFragment"
+            app:destination="@id/cartFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/womenFragment"
+        android:name="com.example.shoesapp.WomenFragment"
+        android:label="@string/women"
+        tools:layout="@layout/fragment_women" >
+        <action
+            android:id="@+id/action_womenFragment_to_cartFragment"
+            app:destination="@id/cartFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cartFragment"
+        android:name="com.example.shoesapp.CartFragment"
+        android:label="@string/cart"
+        tools:layout="@layout/fragment_cart" />
+</navigation>

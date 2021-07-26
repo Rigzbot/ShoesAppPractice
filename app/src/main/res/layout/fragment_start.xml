@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".StartFragment">
+
+    <data>
+        <variable
+            name="startFragment"
+            type="com.example.shoesapp.StartFragment" />
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="0dp"
+        android:layout_marginEnd="80dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/side_margin">
+
+            <ImageView
+                android:layout_width="@dimen/image_size"
+                android:layout_height="@dimen/image_size"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/margin_between_elements"
+                android:importantForAccessibility="no"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/basketball_shoes_illustration_removebg_preview" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/side_margin"
+                android:fontFamily="sans-serif"
+                android:text="@string/choose_category"
+                android:textAppearance="?attr/textAppearanceHeadline4"
+                android:textColor="@color/material_on_background_emphasis_medium" />
+
+            <Button
+                android:id="@+id/mens_shoes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:onClick="@{() -> startFragment.goToMens()}"
+                android:layout_marginTop="@dimen/margin_between_elements"
+                android:minWidth="@dimen/choose_category_button_width"
+                android:text="@string/mens" />
+
+            <Button
+                android:id="@+id/women_shoes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:onClick="@{() -> startFragment.goToWomen()}"
+                android:layout_marginTop="@dimen/margin_between_elements"
+                android:minWidth="@dimen/choose_category_button_width"
+                android:text="@string/women" />
+
+            <Button
+                android:id="@+id/kids_shoes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:onClick="@{() -> startFragment.goToKids()}"
+                android:layout_marginTop="@dimen/margin_between_elements"
+                android:minWidth="@dimen/choose_category_button_width"
+                android:text="@string/kids" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/floating_action_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_margin="16dp"
+                android:contentDescription="@string/cart"
+                android:onClick="@{() ->startFragment.goToCart()}"
+                app:tint="@color/white"
+                app:srcCompat="@drawable/ic_baseline_shopping_cart_24" />
+        </LinearLayout>
+    </ScrollView>
+</layout>
